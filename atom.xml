@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhan的休憩之地</title>
+  
+  <subtitle>充电中...</subtitle>
+  <link href="https://github.com/cosmos-zhan/cosmos-zhan.github.io/tree/master/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/cosmos-zhan/cosmos-zhan.github.io/tree/master/"/>
+  <updated>2021-10-04T13:11:47.906Z</updated>
+  <id>https://github.com/cosmos-zhan/cosmos-zhan.github.io/tree/master/</id>
+  
+  <author>
+    <name>AlienZhan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://github.com/cosmos-zhan/cosmos-zhan.github.io/tree/master/2021/10/04/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://github.com/cosmos-zhan/cosmos-zhan.github.io/tree/master/2021/10/04/%E6%B5%8B%E8%AF%95/</id>
+    <published>2021-10-04T13:11:47.000Z</published>
+    <updated>2021-10-04T13:11:47.906Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
