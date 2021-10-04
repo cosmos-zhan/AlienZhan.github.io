@@ -15,19 +15,6 @@
     </entry>
     
     
-    
-    <entry>
-      <title>类与对象</title>
-      <link href="/cosmos-zhan/cosmos-zhan.github.io/tree/master/2021/09/30/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/"/>
-      <url>/cosmos-zhan/cosmos-zhan.github.io/tree/master/2021/09/30/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h1><h3 id="面向对象语言"><a href="#面向对象语言" class="headerlink" title="面向对象语言"></a>面向对象语言</h3><ol><li><p>封装</p><p>将数据和对数据的操作封装在一起，通过抽象，从具体的实例中抽取共同的性质（属性和行为）形成一般的概念</p></li><li><p>继承：</p><ul><li>子类可以继承父类的属性和行为（即数据和数据上的操作）</li><li>同时又可以增添子类独有的属性和行为</li></ul></li><li><p>多态</p><ul><li>向操作传递不同的消息，让对象根据相应的消息来产生相应的行为 <strong>如：求面积</strong></li><li>同一个操作被不同类型的对象调用时产生不同的行为 <strong>如：不同动物的喊叫声</strong></li></ul></li></ol><h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><h3 id="类声明"><a href="#类声明" class="headerlink" title="类声明"></a>类声明</h3><ul><li>如果类名是拉丁字母，首字母大写</li><li>有多个单词复合时，每个单词的首字母大写 <strong>如：ChinaMade</strong></li></ul><h3 id="类体"><a href="#类体" class="headerlink" title="类体"></a>类体</h3><p>抽象的关键：抓住事物的属性和行为</p><blockquote><p>属性通过变量来刻画，行为通过方法来实现</p><p>即方法操作属性形成一定算法来实现一个具体的的行为</p></blockquote><h5 id="类体的构成"><a href="#类体的构成" class="headerlink" title="类体的构成"></a>类体的构成</h5><ul><li>变量的声明：用来储存属性的值 <strong>（体现对象的属性）</strong></li><li>方法的定义：对类中声明的变量进行操作，即给出算法 <strong>（体现对象具有的具体行为）</strong></li></ul><h3 id="成员变量"><a href="#成员变量" class="headerlink" title="成员变量"></a>成员变量</h3><p>又名域变量</p><p><strong>类型</strong></p><p>Java中的任何一种数据类型</p><ul><li>基本类型：整型、浮点型、字符型、逻辑类型</li><li>引用类型：数组、对象、接口</li></ul><p><strong>有效范围</strong></p><p>在整个类中有效，与书写的先后顺序无关</p><p>建议：不分散书写，先属性后行为</p><p><strong>编程风格</strong></p><ol><li>一行只声明一个变量，便于添加注释</li><li>变量名字除符合标识符规定之外，首单词首字母小写；多个单词组成，从第二个单词开始首字母大写</li><li>变量名要能见名知意，切忌将小写字母l和数字1相邻</li></ol><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ol><li><p>方法头</p></li><li><p>方法体</p><p>其中声明的变量和方法的参数被称为<strong>局部变量</strong></p><p>和类的成员变量不同，局部变量只在<strong>方法内</strong>有效，且与<strong>声明位置</strong>有关</p><p>方法的参数在<strong>整个方法内</strong>有效，方法的局部变量从声明它的位置<strong>之后</strong>开始有效</p><p>局部变量声明在什么语句块中，就只在什么<strong>语句块内</strong>有效</p></li><li><p>区分成员变量和局部变量</p><p>局部变量若与成员变量名字相同，那么成员变量被<strong>隐藏</strong>，该成员变量在该方法内暂时失效</p><p>使用关键字<strong>this</strong>来使用被隐藏的成员变量</p></li><li><p>局部变量<strong>无默认值</strong></p><p>成员变量有默认值，但局部变量没有，使用局部变量之前必须指定一个值</p></li></ol><h3 id="需要注意的问题"><a href="#需要注意的问题" class="headerlink" title="需要注意的问题"></a>需要注意的问题</h3><p>对成员变量的操作只能在方法中，不能直接在类中进行</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">12</span>;  <span class="comment">//合法，这是声明的同时指定初值</span></span><br><span class="line">    a = <span class="number">12</span>;   <span class="comment">//非法，赋值语句只能出现在方法体中</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="类的UML图"><a href="#类的UML图" class="headerlink" title="类的UML图"></a>类的UML图</h3><p><strong>分类</strong></p><p>类的、接口的、泛化关系、关联关系、依赖关系、实现关系的UML图</p><p><strong>构成</strong></p><ol><li>名字层</li><li>变量层</li><li>方法层</li></ol><h2 id="构造方法和对象创建"><a href="#构造方法和对象创建" class="headerlink" title="构造方法和对象创建"></a>构造方法和对象创建</h2><h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><ul><li><p>可以有多个构造方法，但是参数的个数不同，或者参数个数相同但是参数列表中对应的某个参数的类型不同</p></li><li><p>如果没有编写构造方法，系统会提供默认构造方法，其无参数且方法体无语句</p></li></ul><ol><li>如果类定义了一个或多个构造方法，那么Java不提供默认构造方法</li><li>构造方法没有返回类型</li></ol>]]></content>
-      
-      
-      
-    </entry>
-    
-    
   
   
 </search>
