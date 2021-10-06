@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2021/10/06/GUI%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
+      <url>/2021/10/06/GUI%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GUI设计与事件处理"><a href="#GUI设计与事件处理" class="headerlink" title="GUI设计与事件处理"></a>GUI设计与事件处理</h1><h2 id="基本问题"><a href="#基本问题" class="headerlink" title="基本问题"></a>基本问题</h2><h4 id="1-如何开发Java程序图形界面？它需要引入哪些包？"><a href="#1-如何开发Java程序图形界面？它需要引入哪些包？" class="headerlink" title="1. 如何开发Java程序图形界面？它需要引入哪些包？"></a>1. 如何开发Java程序图形界面？它需要引入哪些包？</h4><p>由于Java自身提供了许多强大的用于开发桌面程序的API,Java程序的图形界面可以使用Java提供的各种用于设计GUI的组件类来进行开发。<br>需要引入的包有：</p><ul><li>java.awt 包（Abstract Window Toolkit 抽象窗口工具包）   </li><li>javax.swing 包</li></ul><h4 id="2-什么是布局管理器，它有什么作用？"><a href="#2-什么是布局管理器，它有什么作用？" class="headerlink" title="2. 什么是布局管理器，它有什么作用？"></a>2. 什么是布局管理器，它有什么作用？</h4><p>布局管理器为容器内的组件提供布局策略。当把组件添加到容器中时，布局管理器能够控制组件在容器中的位置。</p><h4 id="3-JFrame类和Panel类的默认布局器分别是什么？"><a href="#3-JFrame类和Panel类的默认布局器分别是什么？" class="headerlink" title="3.    JFrame类和Panel类的默认布局器分别是什么？"></a>3.    JFrame类和Panel类的默认布局器分别是什么？</h4><p>JFrame类： <strong>BorderLayout</strong></p><blockquote><p>BorderLayout将容器划分成East、West、South、North、Center五个区域，向容器中加入每个组件都要指明其所在区域。<br>Dialog也是该布局。</p></blockquote><p>Panel类： <strong>FlowLayout</strong></p><blockquote><p>FlowLayout将容器中的组件按照加入的先后顺序从左向右排列，如果一行排满则转向下一行继续，每行均采用居对齐。</p></blockquote><h4 id="4-请说明FlowLayout布局方式的特点？"><a href="#4-请说明FlowLayout布局方式的特点？" class="headerlink" title="4.    请说明FlowLayout布局方式的特点？"></a>4.    请说明FlowLayout布局方式的特点？</h4><p>FlowLayout将容器中的组件按照加入的先后顺序从左向右排列，如果一行排满则转向下一行继续，每一行的组件均采用居对齐，组件之间的默认水平和垂直间隙为5个像素。</p><h4 id="5-在Java中，什么是事件？简述处理事件的机制。"><a href="#5-在Java中，什么是事件？简述处理事件的机制。" class="headerlink" title="5.    在Java中，什么是事件？简述处理事件的机制。"></a>5.    在Java中，什么是事件？简述处理事件的机制。</h4><ul><li>Java中的事件（ActionEvent）即人机交互中的事件源产生的交互内容。顾名思义，事件表示发生了什么事，比如用户在界面上的一个操作：手势滑动屏幕、按下鼠标。在Java中当一个事件发生的时候，该事件用一个事件对象表示，每一个事件对象都有其对应的事件类。该事件类定义在java.awt.event包中。<br>Java中事件一般继承自java.util.EventObject类，封装了事件源对象，以及事件的相关信息。</li><li>Java事件处理机制主要由事件源、事件对象、事件监视器三个部分来完成。</li><li>首先，生成事件监视器，将事件监视器注册到事件源上</li><li>然后，当事件源上的事件被触发时，生成事件对象并作为参数传给事件监听器</li><li>最后，事件监视器做出响应，调用相应的方法处理事件</li></ul><p><a href="https://imgtu.com/i/4xGAsg"><img src="https://z3.ax1x.com/2021/10/06/4xGAsg.png" alt="4xGAsg.png"></a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试</title>
       <link href="/2021/10/04/%E6%B5%8B%E8%AF%95/"/>
       <url>/2021/10/04/%E6%B5%8B%E8%AF%95/</url>
