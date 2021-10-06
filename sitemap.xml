@@ -59,6 +59,27 @@
   </url>
 
   
+  <url>
+    <loc>https://cosmos-zhan.github.io/tags/Java/</loc>
+    <lastmod>2021-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cosmos-zhan.github.io/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2021-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://cosmos-zhan.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
